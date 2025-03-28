@@ -54,27 +54,27 @@ class ShoppingCart {
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
 
-        cart.addProduct("Laptop", 80000);
-        cart.addProduct("Phone", 50000);
-        cart.addProduct("Tablet", 30000);
-        cart.addProduct("Headphones", 5000);
-        cart.addProduct("Mouse", 1500);
+        cart.addProduct("Laptop", 60000);
+        cart.addProduct("Camera", 40000);
+        cart.addProduct("Phone", 25000);
+        cart.addProduct("Speaker", 3000);
+        cart.addProduct("Mouse", 900);
 
         cart.addToCart("Phone");
         cart.addToCart("Laptop");
         cart.addToCart("Mouse");
-        cart.addToCart("Tablet");
+        cart.addToCart("Camera");
 
         cart.displayCartByInsertion();
         cart.displayCartByPrice();
 
-        System.out.println("Total Cost: ₹" + cart.getTotalCost());
+        System.out.println("Total Cost: " + cart.getTotalCost());
 
-        cart.removeFromCart("Mouse");
+        cart.removeFromCart("Camera");
 
         cart.displayCartByInsertion();
         cart.displayCartByPrice();
-        System.out.println("Updated Total Cost: ₹" + cart.getTotalCost());
+        System.out.println("Updated Total Cost: " + cart.getTotalCost());
     }
 }
 
